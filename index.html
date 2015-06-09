@@ -1,0 +1,36 @@
+---
+layout: default
+title: Event Feeds
+---    
+
+<div class="grid">
+<div class="main-flow-wrapper">
+
+
+<div class="col-3-4">
+  <div class="left-wrap">
+     
+  {% for post in site.posts %}
+    <!--post-->
+     <div class="post">
+      <div class="post-wrap">
+      <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+       <p class="time-info">{{ post.dated }}</p>
+      <div class="body-text"><p>{{ post.content }}</p></div>
+      <div class="post-meta"></div>
+     </div>
+     </div>
+    <!--post-->
+  {% endfor %}
+  
+
+
+  </div>
+</div>
+
+<div class="col-1-4"><div class="right-wrap">.</div></div>
+</div>
+</div>
+
+
+  
