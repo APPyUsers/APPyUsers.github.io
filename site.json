@@ -8,7 +8,7 @@ layout: nil
           "title"    : "{{ post.title }}",
           "url"     : "{{ post.url }}",
           "date"     : "{{ post.dated }}",
-          "content"  : "{{ post.content | escape }}"
+          "content"  : "{{ post.content }}"
         } {% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
     ] 
